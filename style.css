@@ -91,6 +91,7 @@ button#restart-game {
 	position: relative;
 }
 .game-board ul:after {
+	display: none;
 	position: absolute;
 	top: 0;
 	left: 0;
