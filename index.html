@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Lato font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Tic Tac Toe</h1>
+
+	<div class="user-options">
+		Choose your mark <span class="mark" id="x">X</span> <span class="mark" id="o">O</span>
+	</div>
+
+	<div class="score-board">
+		Score <br />
+		<span>You</span><input type="text" name="player" value="0" readonly>
+		<span>Cpu</span><input type="text" name="cpu" value="0" readonly>
+		<button id="reset">Reset Score</button>
+	</div>
+
+	<div class="game-option">
+		<button id="start-game">Start Game</button>
+		<button id="restart-game">Restart</button>
+	</div>
+
+	<div class="game-board">
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+		</ul>
+	</div>
+
+
+	<!-- jQuery -->
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<!-- main ja -->
+	<script src="app.js"></script>
+</body>
+</html>
