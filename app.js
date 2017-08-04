@@ -55,16 +55,25 @@
 			slotValues[i] = cpu; 
 		}
 		console.log('User: ' + userSelect + ' Cpu: ' + cpu);
-		// console.log(slotValues);
+		console.log(slotValues);
 	});
+
 
 	// find the winner
 	function findWinner(slotValues) {
 		console.log(slotValues);
 	}
 
+	// generate a random number for cpu's index
+	function randomNumber() {
+		var randomIndex = Math.floor( (Math.random()) * 10 );
+
+		return randomIndex;
+	}
+
 	// calculate the CPU's move
 	function cpuMove(index, userInput) {
+
 		slotValues[index] = userInput;
 
 		slotClickCounter += 1;
@@ -80,7 +89,7 @@
 		$this.on('click', function() {
 			$this.text(userSelect);
 			var index = $this.attr('id');
-
+			
 			cpuMove(index, userSelect);
 		});
 	});
